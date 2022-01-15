@@ -9,7 +9,7 @@ const Blog = () => {
             <ul>
                {posts.map((post) => {
                    return   <li key={post.id}>
-                                <NavLink to={`/posts/${post.id}`}> 
+                                <NavLink to={`/post/${post.id}`}> 
                                     {post.titulo} 
                                 </NavLink> 
                             </li>
