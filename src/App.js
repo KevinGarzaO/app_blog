@@ -6,6 +6,7 @@ import Header from './components/Header';
 import Inicio from './components/Inicio';
 import styled from 'styled-components';
 import Post from './components/Post';
+import Error404 from './components/Error404';
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
         <Header />
         <Main>
           <Routes>
+            <Route path="*" element={<Error404 />} />
             <Route path="/" element={<Inicio />} />
             <Route path="/blog" element={<Blog />} />
             <Route path="/post/:id" element={<Post />} />
